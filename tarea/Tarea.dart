@@ -1,8 +1,7 @@
 bool esPalindromo(String cadena) {
-  // Eliminar espacios y puntuaciones y convertir todo a minúsculas
+  
   String cadenaFormateada = cadena.replaceAll(RegExp(r'[^a-zA-Z]'), '').toLowerCase();
   
-  // Verificar si la cadena y su reverso son iguales
   return cadenaFormateada == cadenaFormateada.split('').reversed.join('');
 }
 
